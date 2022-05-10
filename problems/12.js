@@ -11,7 +11,21 @@
  * @example "apple" -> "$1.29"
 */
 function problem(fruit) {
-    return null;
+    if(fruit === "orange"){
+        return "$1";
+    }
+    else if(fruit === "apple"){
+        return "$1.29";
+    }
+    else if(fruit === "grapes"){
+        return "$1.50";
+    }
+    else if(fruit === "banana"){
+        return "$0.75";
+    }
+    else{
+        return "$2";
+    }
 }
 
 const tests = [

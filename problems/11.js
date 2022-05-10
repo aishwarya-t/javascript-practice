@@ -8,7 +8,17 @@
  * @example "racecar" -> true
 */
 function problem(str) {
-    return null;
+    let s1 = str.split(" ").join("").toLowerCase()
+    let reversed = ""
+    for (let i = s1.length - 1; i >= 0; i--){
+        reversed += s1[i]
+    }
+    if (reversed === s1){
+        return true
+    }
+    else{
+        return false
+    }
 }
 
 const tests = [

@@ -8,7 +8,12 @@
  * @example 54 -> "Fail"
 */
 function problem(grade) {
-    return null;
+    if(grade >= 60){
+        return "Pass";
+    }
+    else{
+        return "Fail";
+    }
 }
 
 const tests = [
